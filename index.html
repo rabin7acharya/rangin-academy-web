@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rangin Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar bg-white fixed z-10 left-0 right-0 top-0">
+      <div
+        class="container mx-auto px-8 flex justify-between items-center py-3"
+      >
+        <a href="./index.html">
+          <img
+            src="https://www.rangin.com.np/assets/images/logo.png"
+            class="h-8"
+            alt=""
+          />
+        </a>
+        <ul class="nav-links hidden lg:flex">
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Courses</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >About</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-ctas gap-2 font-semibold hidden lg:flex">
+          <a
+            href=""
+            class="px-6 py-3 text-white bg-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >Login</a
+          >
+          <a
+            href=""
+            class="px-6 py-3 text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:text-white hover:transition hover:duration"
+            >Sign Up</a
+          >
+        </div>
+
+        <button class="ham-btn text-xl lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div
+        class="container mx-auto px-8 my-32 lg:my-40 flex flex-col justify-center gap-16"
+      >
+        <div class="hero-info grid grid-cols-5 items-end gap-16">
+          <div
+            class="info-left col-span-5 lg:col-span-3 flex flex-col items-start gap-6"
+          >
+            <img src="./assets/hero-info-asset.svg" alt="" />
+            <h1 class="text-5xl lg:text-6xl font-bold lg:w-10/12">
+              Learn the skills of Tomorrow
+            </h1>
+          </div>
+          <div
+            class="info-right col-span-5 lg:col-span-2 flex gap-4 font-semibold"
+          >
+            <a
+              href=""
+              class="px-6 py-3 text-white whitespace-nowrap bg-black border-2 border-black rounded-full hover:bg-stone-700 hover:border-stone-700 hover:transition hover:duration"
+              >Explore Courses</a
+            >
+            <a
+              href=""
+              class="text-black flex items-center gap-4 group whitespace-nowrap hover:text-stone-700 hover:transition hover:duration"
+            >
+              <img
+                src="./assets/play-btn-asset.svg"
+                class="group-hover:scale-110 group-hover:transition group-hover:duration-300"
+                alt=""
+              />
+              How it works?
+            </a>
+          </div>
+        </div>
+        <div class="hero-img ml-[-2rem] mr-[-2rem]">
+          <img src="./assets/hero-img-asset.svg" class="w-full" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="course-section bg-blue-50">
+      <div
+        class="container mx-auto px-8 py-24 lg:my-40 flex flex-col items-center"
+      >
+        <div
+          class="header-line h-0.5 rounded-full mx-auto bg-indigo-600 w-56 flex items-center justify-center"
+        >
+          <h3 class="font-bold text-lg p-2 bg-blue-50 text-indigo-600">
+            Browse Courses
+          </h3>
+        </div>
+        <h1 class="mt-5 text-4xl text-center font-extrabold">
+          Discover Our Courses
+        </h1>
+
+        <div
+          class="search-filter mt-8 flex flex-wrap justify-between items-center gap-4"
+        >
+          <div
+            class="search-bar w-full lg:w-80 flex justify-between items-center bg-white px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+          >
+            <input
+              type="text"
+              placeholder="Search Courses"
+              class="focus:outline-none"
+            />
+            <!-- <i class="fa-solid fa-magnifying-glass text-indigo-600"></i> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M8.25 15C11.9779 15 15 11.9779 15 8.25C15 4.52208 11.9779 1.5 8.25 1.5C4.52208 1.5 1.5 4.52208 1.5 8.25C1.5 11.9779 4.52208 15 8.25 15Z"
+                stroke="#5B46FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.1974 15.5174C14.5949 16.7174 15.5024 16.8374 16.1999 15.7874C16.8374 14.8274 16.4174 14.0399 15.2624 14.0399C14.4074 14.0324 13.9274 14.6999 14.1974 15.5174Z"
+                stroke="#5B46FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="category-dropdown w-full lg:w-80">
+            <div
+              class="category-btn flex justify-between items-center bg-white px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+            >
+              <span class="text-gray-500">Category</span>
+              <i
+                class="fa-solid fa-chevron-down text-gray-500 text-indigo-600"
+              ></i>
+            </div>
+            <div class="category-list hidden">
+              <ul class="bg-white rounded-md border border-gray-300">
+                <li class="px-4 py-2 hover:bg-gray-100">Web Development</li>
+                <li class="px-4 py-2 hover:bg-gray-100">App Development</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Design</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Marketing</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Business</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Finance</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Photography</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Music</li>
+                <li class="px-4 py-2 hover:bg-gray-100">IT & Software</li>
+                <li class="px-4 py-2 hover:bg-gray-100">
+                  Personal Development
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-100">Health & Fitness</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Office Productivity</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Lifestyle</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Photography</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Music</li>
+                <li class="px-4 py-2 hover:bg-gray-100">IT & Software</li>
+                <li class="px-4 py-2 hover:bg-gray-100">
+                  Personal Development
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-100">Health & Fitness</li>
+              </ul>
+            </div>
+          </div>
+          <!-- browse all button  -->
+
+          <a
+            href=""
+            class="px-6 py-3 w-full lg:w-fit text-white bg-indigo-600 flex justify-center items-center font-semibold rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >Browse All</a
+          >
+        </div>
+
+        <div
+          class="course-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-16"
+        >
+          <div class="course-card flex flex-col bg-white rounded-lg">
+            <div class="course-img rounded-lg overflow-hidden h-56 relative">
+              <img
+                src="https://i.pinimg.com/564x/da/40/4b/da404bf7bd4398c9f256c65507d3c860.jpg"
+                alt=""
+              />
+              <div
+                class="play-btn h-[6rem] w-[6rem] bg-white opacity-80 rounded-full flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                <i class="fa-solid fa-play text-3xl text-indigo-600"></i>
+              </div>
+            </div>
+            <div class="course-info flex flex-col gap-5 p-6">
+              <div class="category-price flex gap-4 items-center">
+                <span
+                  class="text-sm text-gray-500 p-2 border border-stone-200 rounded-md"
+                  >Web Development</span
+                >
+                <span class="text-black font-bold">NRs. 12,000</span>
+              </div>
+              <h3 class="text-xl font-bold border-b border-stone-200 pb-4">
+                Web Development using MERN Stack
+              </h3>
+              <div class="course-timings flex flex-col gap-3">
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-calendar-days text-stone-400"></i>
+                  <span class="text-gray-500"
+                    >From: 2023/01/08, To: 2023/03/01</span
+                  >
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-clock text-stone-400"></i>
+                  <span class="text-gray-500">Duration: 1.5 hr daily</span>
+                </div>
+                <!-- button  -->
+              </div>
+              <a
+                href=""
+                class="px-6 py-3 text-white bg-indigo-600 flex justify-center items-center font-semibold border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+                >Go to Course</a
+              >
+            </div>
+          </div>
+          <div class="course-card flex flex-col bg-white rounded-lg">
+            <div class="course-img rounded-lg overflow-hidden h-56 relative">
+              <img
+                src="https://i.pinimg.com/736x/d5/2d/7c/d52d7cdd20736a01b0978e04ac276d39.jpg"
+                alt=""
+              />
+              <div
+                class="play-btn h-[6rem] w-[6rem] bg-white opacity-80 rounded-full flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                <i class="fa-solid fa-play text-3xl text-indigo-600"></i>
+              </div>
+            </div>
+            <div class="course-info flex flex-col gap-5 p-6">
+              <div class="category-price flex gap-4 items-center">
+                <span
+                  class="text-sm text-gray-500 p-2 border border-stone-200 rounded-md"
+                  >Animation</span
+                >
+                <span class="text-black font-bold">NRs. 20,000</span>
+              </div>
+              <h3 class="text-xl font-bold border-b border-stone-200 pb-4">
+                Advanced Video Motion & Graphics Mastery
+              </h3>
+              <div class="course-timings flex flex-col gap-3">
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-calendar-days text-stone-400"></i>
+                  <span class="text-gray-500"
+                    >From: 2023/01/08, To: 2023/03/01</span
+                  >
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-clock text-stone-400"></i>
+                  <span class="text-gray-500">Duration: 1.5 hr daily</span>
+                </div>
+                <!-- button  -->
+              </div>
+              <a
+                href=""
+                class="px-6 py-3 text-white bg-indigo-600 flex justify-center items-center font-semibold border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+                >Go to Course</a
+              >
+            </div>
+          </div>
+          <div class="course-card flex flex-col bg-white rounded-lg">
+            <div class="course-img rounded-lg overflow-hidden h-56 relative">
+              <img
+                src="https://i.pinimg.com/564x/e6/e2/e0/e6e2e0c81c52501ef66a6219d53aa920.jpg"
+                alt=""
+              />
+              <div
+                class="play-btn h-[6rem] w-[6rem] bg-white opacity-80 rounded-full flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                <i class="fa-solid fa-play text-3xl text-indigo-600"></i>
+              </div>
+            </div>
+            <div class="course-info flex flex-col gap-5 p-6">
+              <div class="category-price flex gap-4 items-center">
+                <span
+                  class="text-sm text-gray-500 p-2 border border-stone-200 rounded-md"
+                  >Design & Research</span
+                >
+                <span class="text-black font-bold">NRs. 12,000</span>
+              </div>
+              <h3 class="text-xl font-bold border-b border-stone-200 pb-4">
+                UI/UX Research & Design Mastery
+              </h3>
+              <div class="course-timings flex flex-col gap-3">
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-calendar-days text-stone-400"></i>
+                  <span class="text-gray-500"
+                    >From: 2023/01/08, To: 2023/03/01</span
+                  >
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-clock text-stone-400"></i>
+                  <span class="text-gray-500">Duration: 1.5 hr daily</span>
+                </div>
+                <!-- button  -->
+              </div>
+              <a
+                href=""
+                class="px-6 py-3 text-white bg-indigo-600 flex justify-center items-center font-semibold border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+                >Go to Course</a
+              >
+            </div>
+          </div>
+          <div class="course-card flex flex-col bg-white rounded-lg">
+            <div class="course-img rounded-lg overflow-hidden h-56 relative">
+              <img
+                src="https://i.pinimg.com/564x/da/40/4b/da404bf7bd4398c9f256c65507d3c860.jpg"
+                alt=""
+              />
+              <div
+                class="play-btn h-[6rem] w-[6rem] bg-white opacity-80 rounded-full flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                <i class="fa-solid fa-play text-3xl text-indigo-600"></i>
+              </div>
+            </div>
+            <div class="course-info flex flex-col gap-5 p-6">
+              <div class="category-price flex gap-4 items-center">
+                <span
+                  class="text-sm text-gray-500 p-2 border border-stone-200 rounded-md"
+                  >Web Development</span
+                >
+                <span class="text-black font-bold">NRs. 12,000</span>
+              </div>
+              <h3 class="text-xl font-bold border-b border-stone-200 pb-4">
+                Web Development using MERN Stack
+              </h3>
+              <div class="course-timings flex flex-col gap-3">
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-calendar-days text-stone-400"></i>
+                  <span class="text-gray-500"
+                    >From: 2023/01/08, To: 2023/03/01</span
+                  >
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-clock text-stone-400"></i>
+                  <span class="text-gray-500">Duration: 1.5 hr daily</span>
+                </div>
+                <!-- button  -->
+              </div>
+              <a
+                href=""
+                class="px-6 py-3 text-white bg-indigo-600 flex justify-center items-center font-semibold border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+                >Go to Course</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
