@@ -135,7 +135,7 @@
             <input
               type="text"
               placeholder="Search Courses"
-              class="focus:outline-none"
+              class="focus:outline-none w-full"
             />
             <!-- <i class="fa-solid fa-magnifying-glass text-indigo-600"></i> -->
             <svg
@@ -493,7 +493,7 @@
             <img src="./assets/course-guide-asset.png" alt="" class="" />
           </div>
           <div class="info-right w-full lg:w-5/12">
-            <div class="course-highlights flex flex-col gap-12 my-12">
+            <div class="course-highlights flex flex-col gap-12 my-12 lg:mt-16">
               <div class="guide-item flex items-center gap-6">
                 <div
                   class="text-3xl font-extrabold bg-blue-600 h-[72px] w-[72px] flex justify-center items-center rounded-full text-white"
@@ -567,12 +567,12 @@
         </h1>
 
         <div
-          class="tutor-grid mt-16 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          class="tutor-grid relative mt-16 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
         >
           <div
             class="tutor-card bg-[url('./assets/tutor-1-img.png')] bg-cover flex flex-col justify-end p-6 rounded-lg bg-green-600 h-[32rem] md:h-[28rem]"
           >
-            <div class="designation p-4 bg-white rounded-lg">
+            <div class="designation px-7 py-6 bg-white rounded-md">
               <h4 class="text-xl font-bold text-indigo-600">Abhiyan Thapa</h4>
               <p class="text-stone-500">Researcher</p>
             </div>
@@ -580,7 +580,7 @@
           <div
             class="tutor-card bg-[url('./assets/tutor-2-img.png')] bg-cover flex flex-col justify-end p-6 rounded-lg bg-indigo-600 h-[32rem] md:h-[28rem]"
           >
-            <div class="designation p-4 bg-white rounded-lg">
+            <div class="designation px-7 py-6 bg-white rounded-md">
               <h4 class="text-xl font-bold text-indigo-600">Rabin Acharya</h4>
               <p class="text-stone-500">Web Developer</p>
             </div>
@@ -588,25 +588,213 @@
           <div
             class="tutor-card bg-[url('./assets/tutor-3-img.png')] bg-cover flex flex-col justify-end p-6 rounded-lg bg-red-600 h-[32rem] md:h-[28rem]"
           >
-            <div class="designation p-4 bg-white rounded-lg">
+            <div class="designation px-7 py-6 bg-white rounded-md">
               <h4 class="text-xl font-bold text-indigo-600">Binu Smith</h4>
               <p class="text-stone-500">Web Developer</p>
             </div>
           </div>
           <div
-            class="tutor-card bg-[url('./assets/tutor-4-img.png')] bg-cover flex flex-col justify-end p-6 rounded-lg bg-yellow-600 h-[32rem] md:h-[28rem]"
+            class="tutor-card bg-[url('./assets/tutor-4-img.png')] bg-cover flex flex-col justify-end p-6 rounded-lg bg-yellow-500 h-[32rem] md:h-[28rem]"
           >
-            <div class="designation p-4 bg-white rounded-lg">
+            <div class="designation px-7 py-6 bg-white rounded-md">
               <h4 class="text-xl font-bold text-indigo-600">Krish Magar</h4>
               <p class="text-stone-500">Web Developer</p>
+            </div>
+          </div>
+          <img
+            src="./assets/tutor-background.svg"
+            class="absolute bottom-[-4rem] right-[-2rem] z-[-1]"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div
+        class="container mx-auto px-8 pt-40 flex justify-between items-center"
+      >
+        <div class="testimonial-desc w-4/12">
+          <div
+            class="header-line h-0.5 rounded-full bg-indigo-600 w-48 flex items-center justify-center"
+          >
+            <h3 class="font-bold text-lg p-2 bg-white text-indigo-600">
+              Testimonials
+            </h3>
+          </div>
+          <h1 class="mt-5 text-4xl font-extrabold leading-snug w-11/12">
+            What people say about us!
+          </h1>
+          <p class="text-stone-500 mt-5 mb-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            illo. Non iusto molestiae assumenda, magnam. Lorem ipsum dolor.
+            Molestiae, illo. Non iusto molestiae assumenda, magnam.
+          </p>
+
+          <a
+            href=""
+            class="px-6 py-3 font-semibold text-white bg-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >Know More</a
+          >
+        </div>
+        <div class="testimonial-cards flex flex-col items-center w-6/12">
+          <img src="./assets/testimonial-asset.svg" alt="" class="w-10/12" />
+          <div class="card rounded-lg p-14 bg-indigo-600">
+            <p class="rating mb-3">⭐⭐⭐⭐⭐</p>
+            <blockquote class="text-white font-semibold">
+              " Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Blanditiis tenetur, omnis error dolorem, perspiciatis quam officia
+              necessitatibus velit nulla dignissimos adipisci nostrum voluptate
+              quibusdam molestias! "
+            </blockquote>
+
+            <div class="user-info flex items-center gap-4 mt-16">
+              <div
+                class="h-12 w-12 bg-cover bg-center bg-[url('https://i.insider.com/5ef37aa82618b904734dbb45?width=600&format=jpeg&auto=webp')] overflow-hidden rounded-full border-2 border-white"
+              ></div>
+
+              <div class="user-info">
+                <h5 class="text-white font-semibold">Ulrich Neilson</h5>
+                <p class="text-white/80 text-sm">Student, Entrepreneur</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer-section">
-      <div class="container mx-auto px-8 pt-40"></div>
+    <footer class="footer-section bg-blue-50 mt-40">
+      <div class="container mx-auto px-8 grid grid-cols-5 gap-24 py-24">
+        <div class="about col-span-2 flex flex-col gap-7">
+          <a href="./index.html">
+            <img
+              src="https://www.rangin.com.np/assets/images/logo.png"
+              class="h-8"
+              alt=""
+            />
+          </a>
+
+          <p class="text-stone-500">
+            By submitting your email, you will receive latest news and
+            announcement that our platform offers in the future
+          </p>
+
+          <div
+            class="newsletter flex rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent overflow-hidden"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="bg-white px-4 py-3 w-full focus:outline-none"
+            />
+            <button
+              class="px-6 py-3 text-white font-semibold bg-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div class="links col-span-1 flex flex-col gap-7">
+          <h3 class="font-bold">Menu</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Courses</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">About Us</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Contact</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Login / Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="links col-span-1 flex flex-col gap-7">
+          <h3 class="text-blue-50">.</h3>
+          <ul class="links flex flex-col justify-end gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Course Guide</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">How it works?</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Tutors</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Testimonials</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Help?</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="links col-span-1 flex flex-col gap-7">
+          <h3 class="font-bold">Categories</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Web Development</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Animation</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Video Editing</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Design & Research</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Digital Marketing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-8 pb-16">
+        <div
+          class="social-media px-8 py-6 bg-indigo-600 rounded-lg flex justify-between items-center"
+        >
+          <h4 class="text-white font-semibold">
+            Copyright © Rangin Academy | A product of Rangin Technology
+          </h4>
+
+          <div class="social-icons flex gap-3">
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
