@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rangin Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar bg-blue-50 fixed z-10 left-0 right-0 top-0">
+      <div
+        class="container mx-auto px-8 flex justify-between items-center py-3"
+      >
+        <a href="./index.html">
+          <img
+            src="https://www.rangin.com.np/assets/images/logo.png"
+            class="h-8"
+            alt=""
+          />
+        </a>
+        <ul class="nav-links hidden lg:flex">
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Courses</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >About</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-ctas gap-2 font-semibold hidden lg:flex">
+          <a
+            href=""
+            class="px-6 py-3 text-white bg-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >Login</a
+          >
+          <a
+            href=""
+            class="px-6 py-3 text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:text-white hover:transition hover:duration"
+            >Sign Up</a
+          >
+        </div>
+
+        <button class="ham-btn text-xl lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="course-header bg-blue-50">
+      <div
+        class="container mx-auto px-8 pt-28 pb-20 flex flex-col justify-center items-center gap-8"
+      >
+        <h1
+          class="text-4xl text-center font-bold md:w-8/12 lg:w-4/12 xl:w-3/12"
+        >
+          Introduction to Web Development
+        </h1>
+        <div class="breadcrumb flex gap-4 font-semibold text-stone-500">
+          <a href="">Home</a>
+          <a href="">/</a>
+          <a href="">Courses</a>
+          <a href="">/</a>
+          <a class="text-indigo-600 font-bold" href="">Web Development</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-body my-16">
+      <div
+        class="container mx-auto px-8 xl:px-32 grid items-start grid-cols-5 gap-8"
+      >
+        <div class="course-contents col-span-5 lg:col-span-3 flex flex-col">
+          <div
+            class="course-img rounded-lg overflow-hidden bg-cover h-96 relative bg-[url('https://i.pinimg.com/736x/d5/2d/7c/d52d7cdd20736a01b0978e04ac276d39.jpg')]"
+          >
+            <div
+              class="play-btn h-[8rem] w-[8rem] bg-white opacity-80 rounded-full flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+              <i class="fa-solid fa-play text-4xl text-indigo-600"></i>
+            </div>
+          </div>
+
+          <div
+            class="category-ratings mb-6 mt-9 flex items-center gap-4 font-semibold"
+          >
+            <a
+              href=""
+              class="text-sm text-white py-2 px-4 bg-indigo-500 rounded-md"
+              >Web Development</a
+            >
+            <p>⭐4.5 (17)</p>
+            <p class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="15"
+                viewBox="0 0 11 15"
+                fill="none"
+              >
+                <path
+                  d="M9.09 9.1125C6.9975 7.7175 3.585 7.7175 1.4775 9.1125C0.525 9.75 0 10.6125 0 11.535C0 12.4575 0.525 13.3125 1.47 13.9425C2.52 14.6475 3.9 15 5.28 15C6.66 15 8.04 14.6475 9.09 13.9425C10.035 13.305 10.56 12.45 10.56 11.52C10.5525 10.5975 10.035 9.7425 9.09 9.1125Z"
+                  fill="#5B46FF"
+                />
+                <path
+                  opacity="0.4"
+                  d="M5.28003 0C3.31503 0 1.71753 1.5975 1.71753 3.5625C1.71753 5.49 3.22503 7.05 5.19003 7.1175C5.25003 7.11 5.31003 7.11 5.35503 7.1175C5.37003 7.1175 5.37753 7.1175 5.39253 7.1175C5.40003 7.1175 5.40003 7.1175 5.40753 7.1175C7.32753 7.05 8.83503 5.49 8.84253 3.5625C8.84253 1.5975 7.24503 0 5.28003 0Z"
+                  fill="#5B46FF"
+                />
+              </svg>
+              <span>9 Students</span>
+            </p>
+          </div>
+
+          <h1 class="text-4xl font-bold w-10/12 mb-6">
+            Introduction to Web Development
+          </h1>
+
+          <p class="text-stone-500 mb-16 w-11/12">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Recusandae, perferendis. Deleniti expedita quas optio dignissimos
+            amet nemo numquam, laborum, quod possimus doloribus placeat deserunt
+            non sequi illo totam.
+          </p>
+
+          <div class="syallabus-accordion">
+            <h4 class="font-bold text-xl">Course Syallabus</h4>
+            <ul class="accordions flex flex-col gap-2 mt-4">
+              <li
+                class="flex flex-col gap-4 p-7 rounded-md drop-shadow-2xl bg-white"
+              >
+                <div class="header flex gap-3 font-bold">
+                  <span class="text-indigo-600">01</span>
+                  <div class="row w-full flex items-center justify-between">
+                    <p>Introduction</p>
+                    <i class="fa-solid fa-chevron-down text-stone-400"></i>
+                  </div>
+                </div>
+                <!-- <div class="body text-stone-500">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus temporibus necessitatibus asperiores nisi,
+                    voluptatem dolore, ratione dolorum placeat excepturi sint
+                    consequatur accusamus cum molestiae labore porro quas ipsum
+                    repudiandae soluta?
+                  </p>
+                </div> -->
+              </li>
+              <li
+                class="flex flex-col gap-4 p-7 rounded-md drop-shadow-2xl bg-white"
+              >
+                <div class="header flex gap-3 font-bold">
+                  <span class="text-indigo-600">02</span>
+                  <div class="row w-full flex items-center justify-between">
+                    <p>Environment Setup and IDE Walkthrough</p>
+                    <i class="fa-solid fa-chevron-down text-stone-400"></i>
+                  </div>
+                </div>
+                <!-- <div class="body text-stone-500">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus temporibus necessitatibus asperiores nisi,
+                    voluptatem dolore, ratione dolorum placeat excepturi sint
+                    consequatur accusamus cum molestiae labore porro quas ipsum
+                    repudiandae soluta?
+                  </p>
+                </div> -->
+              </li>
+              <li
+                class="flex flex-col gap-4 p-7 rounded-md drop-shadow-2xl bg-white"
+              >
+                <div class="header flex gap-3 font-bold">
+                  <span class="text-indigo-600">03</span>
+                  <div class="row w-full flex items-center justify-between">
+                    <p>Introduction to Web, Server-Client Architecture</p>
+                    <i class="fa-solid fa-chevron-down text-stone-400"></i>
+                  </div>
+                </div>
+                <!-- <div class="body text-stone-500">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus temporibus necessitatibus asperiores nisi,
+                    voluptatem dolore, ratione dolorum placeat excepturi sint
+                    consequatur accusamus cum molestiae labore porro quas ipsum
+                    repudiandae soluta?
+                  </p>
+                </div> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="course-facts col-span-5 lg:col-span-2 rounded-lg drop-shadow-2xl bg-white p-10"
+        >
+          <h1 class="text-3xl font-bold mb-6">NPr. 12,000/-</h1>
+
+          <div class="plan-dropdown w-full">
+            <div
+              class="plan-btn flex justify-between items-center bg-white px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+            >
+              <span class="text-gray-500">Course Plan</span>
+              <i
+                class="fa-solid fa-chevron-down text-gray-500 text-indigo-600"
+              ></i>
+            </div>
+            <div class="plan-list hidden">
+              <ul class="bg-white rounded-md border border-gray-300">
+                <li class="px-4 py-2 hover:bg-gray-100">Web Development</li>
+                <li class="px-4 py-2 hover:bg-gray-100">App Development</li>
+                <li class="px-4 py-2 hover:bg-gray-100">Design</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="course-facts mt-8 flex flex-col gap-5">
+            <div class="fact-row flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  opacity="0.4"
+                  d="M21 22.75H3C2.59 22.75 2.25 22.41 2.25 22C2.25 21.59 2.59 21.25 3 21.25H21C21.41 21.25 21.75 21.59 21.75 22C21.75 22.41 21.41 22.75 21 22.75Z"
+                  fill="#5B46FF"
+                />
+                <path
+                  d="M5.59998 8.38H4C3.45 8.38 3 8.83 3 9.38V18C3 18.55 3.45 19 4 19H5.59998C6.14998 19 6.59998 18.55 6.59998 18V9.38C6.59998 8.82 6.14998 8.38 5.59998 8.38Z"
+                  fill="#5B46FF"
+                />
+                <path
+                  d="M12.7999 5.19H11.2C10.65 5.19 10.2 5.64 10.2 6.19V18C10.2 18.55 10.65 19 11.2 19H12.7999C13.3499 19 13.7999 18.55 13.7999 18V6.19C13.7999 5.64 13.3499 5.19 12.7999 5.19Z"
+                  fill="#5B46FF"
+                />
+                <path
+                  d="M19.9999 2H18.3999C17.8499 2 17.3999 2.45 17.3999 3V18C17.3999 18.55 17.8499 19 18.3999 19H19.9999C20.5499 19 20.9999 18.55 20.9999 18V3C20.9999 2.45 20.5499 2 19.9999 2Z"
+                  fill="#5B46FF"
+                />
+              </svg>
+              <div
+                class="flex justify-between w-full items-center font-semibold"
+              >
+                <p class="text-stone-500">Course Level</p>
+                <p>Beginner</p>
+              </div>
+            </div>
+            <div class="fact-row flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  opacity="0.4"
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                  fill="#82B51A"
+                />
+                <path
+                  d="M15.7099 15.93C15.5799 15.93 15.4499 15.9 15.3299 15.82L12.2299 13.97C11.4599 13.51 10.8899 12.5 10.8899 11.61V7.50999C10.8899 7.09999 11.2299 6.75999 11.6399 6.75999C12.0499 6.75999 12.3899 7.09999 12.3899 7.50999V11.61C12.3899 11.97 12.6899 12.5 12.9999 12.68L16.0999 14.53C16.4599 14.74 16.5699 15.2 16.3599 15.56C16.2099 15.8 15.9599 15.93 15.7099 15.93Z"
+                  fill="#82B51A"
+                />
+              </svg>
+              <div
+                class="flex justify-between w-full items-center font-semibold"
+              >
+                <p class="text-stone-500">Duration</p>
+                <p>3 Months</p>
+              </div>
+            </div>
+            <div class="fact-row flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  opacity="0.4"
+                  d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"
+                  fill="#F25425"
+                />
+                <path
+                  d="M14.9701 10.23L12.0701 8.56C11.3501 8.14 10.4801 8.14 9.76011 8.56C9.04011 8.98 8.61011 9.72 8.61011 10.56V13.91C8.61011 14.74 9.04011 15.49 9.76011 15.91C10.1201 16.12 10.5201 16.22 10.9101 16.22C11.3101 16.22 11.7001 16.12 12.0601 15.91L14.9601 14.24C15.6801 13.82 16.1101 13.08 16.1101 12.24C16.1301 11.4 15.7001 10.65 14.9701 10.23Z"
+                  fill="#F25425"
+                />
+              </svg>
+              <div
+                class="flex justify-between w-full items-center font-semibold"
+              >
+                <p class="text-stone-500">Sessions</p>
+                <p>43</p>
+              </div>
+            </div>
+            <div class="fact-row flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  opacity="0.4"
+                  d="M21 22.75H3C2.59 22.75 2.25 22.41 2.25 22C2.25 21.59 2.59 21.25 3 21.25H21C21.41 21.25 21.75 21.59 21.75 22C21.75 22.41 21.41 22.75 21 22.75Z"
+                  fill="#5B46FF"
+                />
+                <path
+                  d="M5.59998 8.38H4C3.45 8.38 3 8.83 3 9.38V18C3 18.55 3.45 19 4 19H5.59998C6.14998 19 6.59998 18.55 6.59998 18V9.38C6.59998 8.82 6.14998 8.38 5.59998 8.38Z"
+                  fill="#5B46FF"
+                />
+                <path
+                  d="M12.7999 5.19H11.2C10.65 5.19 10.2 5.64 10.2 6.19V18C10.2 18.55 10.65 19 11.2 19H12.7999C13.3499 19 13.7999 18.55 13.7999 18V6.19C13.7999 5.64 13.3499 5.19 12.7999 5.19Z"
+                  fill="#5B46FF"
+                />
+                <path
+                  d="M19.9999 2H18.3999C17.8499 2 17.3999 2.45 17.3999 3V18C17.3999 18.55 17.8499 19 18.3999 19H19.9999C20.5499 19 20.9999 18.55 20.9999 18V3C20.9999 2.45 20.5499 2 19.9999 2Z"
+                  fill="#5B46FF"
+                />
+              </svg>
+              <div
+                class="flex justify-between w-full items-center font-semibold"
+              >
+                <p class="text-stone-500">Course Level</p>
+                <p>Beginner</p>
+              </div>
+            </div>
+            <div class="fact-row flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  opacity="0.4"
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                  fill="#82B51A"
+                />
+                <path
+                  d="M15.7099 15.93C15.5799 15.93 15.4499 15.9 15.3299 15.82L12.2299 13.97C11.4599 13.51 10.8899 12.5 10.8899 11.61V7.50999C10.8899 7.09999 11.2299 6.75999 11.6399 6.75999C12.0499 6.75999 12.3899 7.09999 12.3899 7.50999V11.61C12.3899 11.97 12.6899 12.5 12.9999 12.68L16.0999 14.53C16.4599 14.74 16.5699 15.2 16.3599 15.56C16.2099 15.8 15.9599 15.93 15.7099 15.93Z"
+                  fill="#82B51A"
+                />
+              </svg>
+              <div
+                class="flex justify-between w-full items-center font-semibold"
+              >
+                <p class="text-stone-500">Duration</p>
+                <p>3 Months</p>
+              </div>
+            </div>
+            <div class="fact-row flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  opacity="0.4"
+                  d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"
+                  fill="#F25425"
+                />
+                <path
+                  d="M14.9701 10.23L12.0701 8.56C11.3501 8.14 10.4801 8.14 9.76011 8.56C9.04011 8.98 8.61011 9.72 8.61011 10.56V13.91C8.61011 14.74 9.04011 15.49 9.76011 15.91C10.1201 16.12 10.5201 16.22 10.9101 16.22C11.3101 16.22 11.7001 16.12 12.0601 15.91L14.9601 14.24C15.6801 13.82 16.1101 13.08 16.1101 12.24C16.1301 11.4 15.7001 10.65 14.9701 10.23Z"
+                  fill="#F25425"
+                />
+              </svg>
+              <div
+                class="flex justify-between w-full items-center font-semibold"
+              >
+                <p class="text-stone-500">Sessions</p>
+                <p>43</p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="./course.html"
+            class="px-6 py-3 mt-8 text-white bg-indigo-600 flex justify-center items-center font-semibold border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >Enroll Now</a
+          >
+          <hr class="my-8" />
+
+          <h4 class="text-lg text-stone-500 font-semibold text-sm">
+            Course Tutor
+          </h4>
+
+          <div class="user-info flex items-center gap-4 mt-4">
+            <div
+              class="h-12 w-12 bg-cover bg-center bg-[url('https://i.insider.com/5ef37aa82618b904734dbb45?width=600&format=jpeg&auto=webp')] overflow-hidden rounded-full border-2 border-white"
+            ></div>
+
+            <div class="user-info">
+              <h5 class="font-bold">Ulrich Neilson</h5>
+              <p class="text-stone-500 text-sm">Student, Entrepreneur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section bg-blue-50 mt-40">
+      <div class="container mx-auto px-8 grid grid-cols-6 gap-24 py-24">
+        <div
+          class="about w-fit col-span-5 lg:col-span-3 lg:w-9/12 flex flex-col gap-7"
+        >
+          <a href="./index.html">
+            <img
+              src="https://www.rangin.com.np/assets/images/logo.png"
+              class="h-8"
+              alt=""
+            />
+          </a>
+
+          <p class="text-stone-500">
+            By submitting your email, you will receive latest news and
+            announcement that our platform offers in the future
+          </p>
+
+          <div
+            class="newsletter flex rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent overflow-hidden"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="bg-white px-4 py-3 w-full focus:outline-none"
+            />
+            <button
+              class="px-6 py-3 text-white font-semibold bg-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Menu</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Courses</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">About Us</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Contact</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Login / Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Others</h3>
+          <ul class="links flex flex-col justify-end gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Course Guide</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">How it works?</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Tutors</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Testimonials</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Help?</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Categories</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Web Development</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Animation</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Video Editing</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Design & Research</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Digital Marketing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-8 pb-16">
+        <div
+          class="social-media w-full grid gap-8 grid-cols-4 px-8 py-6 bg-indigo-600 rounded-lg flex justify-between items-center"
+        >
+          <h4 class="text-white font-semibold col-span-4 lg:col-span-3">
+            Copyright © Rangin Academy | A product of Rangin Technology
+          </h4>
+
+          <div
+            class="social-icons col-span-4 lg:col-span-1 flex lg:justify-end gap-3"
+          >
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
