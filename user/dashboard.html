@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rangin Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="dashboard w-full grid grid-cols-12 bg-blue-50">
+      <div
+        class="side-bar h-screen col-span-2 md:col-span-3 lg:col-span-2 pt-8 pl-2 lg:pl-8 bg-white"
+      >
+        <a
+          href="../index.html"
+          class="flex justify-center lg:justify-start lg:pl-4 lg:pt-3"
+        >
+          <h1 class="text-2xl font-bold text-indigo-500 flex gap-0">
+            R <span class="hidden lg:flex">angin</span>
+          </h1>
+        </a>
+        <div class="menu w-full mt-12">
+          <ul>
+            <li>
+              <button
+                class="active w-full tab-btn rounded-l-full hover:text-indigo-600 font-semibold bg-blue-50 px-6 flex gap-3 items-center py-5"
+                id="tab-btn-i"
+              >
+                <i class="fas fa-home"></i>
+                <span class="hidden md:flex">Dashboard</span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="active w-full tab-btn rounded-l-full hover:text-indigo-600 font-semibold px-6 flex gap-3 items-center py-5"
+                id="tab-btn-ii"
+              >
+                <i class="fas fa-inbox"></i>
+                <span class="hidden md:flex">Inbox</span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="active w-full tab-btn rounded-l-full hover:text-indigo-600 font-semibold px-6 flex gap-3 items-center py-5"
+                id="tab-btn-iii"
+              >
+                <i class="fas fa-bell"></i>
+                <span class="hidden md:flex">Notifications</span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="active w-full tab-btn rounded-l-full hover:text-indigo-600 font-semibold px-6 flex gap-3 items-center py-5"
+                id="tab-btn-iv"
+              >
+                <i class="fas fa-book"></i>
+                <span class="hidden md:flex">Course</span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="active w-full tab-btn rounded-l-full hover:text-indigo-600 font-semibold px-6 flex gap-3 items-center py-5"
+                id="tab-btn-v"
+              >
+                <i class="fas fa-tasks"></i>
+                <span class="hidden md:flex">Assignments</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="dashboard-content col-span-10 md:col-span-9 lg:col-span-10 p-4 md:p-8"
+      >
+        <div class="top-bar flex lg:justify-between items-center gap-3">
+          <div class="left flex w-full lg:w-fit gap-4 items-center">
+            <div
+              class="search-bar w-full lg:w-[32rem] flex justify-between items-center bg-white px-5 py-4 rounded-full border border-stone-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+            >
+              <input
+                type="text"
+                placeholder="Type here to search"
+                class="focus:outline-none w-full"
+              />
+              <!-- <i class="fa-solid fa-magnifying-glass text-indigo-600"></i> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M8.25 15C11.9779 15 15 11.9779 15 8.25C15 4.52208 11.9779 1.5 8.25 1.5C4.52208 1.5 1.5 4.52208 1.5 8.25C1.5 11.9779 4.52208 15 8.25 15Z"
+                  stroke="#5B46FF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.1974 15.5174C14.5949 16.7174 15.5024 16.8374 16.1999 15.7874C16.8374 14.8274 16.4174 14.0399 15.2624 14.0399C14.4074 14.0324 13.9274 14.6999 14.1974 15.5174Z"
+                  stroke="#5B46FF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <button
+              class="bg-white hidden lg:flex border border-stone-300 h-14 w-14 flex justify-center items-center rounded-full"
+            >
+              <i class="fa-regular fa-bell text-indigo-500"></i>
+            </button>
+            <button
+              class="bg-white hidden lg:flex border border-stone-300 h-14 w-14 flex justify-center items-center rounded-full"
+            >
+              <i class="fa-regular fa-envelope text-indigo-500"></i>
+            </button>
+          </div>
+          <div
+            class="user-info rounded-full flex items-center gap-2 md:bg-white lg:pr-5 p-1 border border-stone-300"
+          >
+            <div
+              class="avatar rounded-full bg-indigo-500 h-12 w-12 flex items-center justify-center"
+            >
+              <i class="fa-regular fa-user text-white font-2xl"></i>
+            </div>
+            <div class="user-info flex-col gap-[-2px] hidden lg:flex">
+              <h4 class="text-indigo-500 font-semibold p-0 leading-5">
+                Rabin Acharya
+              </h4>
+              <span class="text-stone-400 text-sm p-0">Student</span>
+            </div>
+          </div>
+        </div>
+        <div class="tab-contents w-full flex flex-1 mt-12">
+          <div class="tab-content w-full" id="tab-content-i">
+            <h1 class="font-bold text-3xl">Tab 1</h1>
+          </div>
+          <div class="tab-content w-full" id="tab-content-ii">
+            <h1 class="font-bold text-3xl">Tab 2</h1>
+          </div>
+          <div class="tab-content w-full" id="tab-content-iii">
+            <h1 class="font-bold text-3xl">Tab 3</h1>
+          </div>
+          <div class="tab-content w-full" id="tab-content-iv">
+            <h1 class="font-bold text-3xl">Tab 4</h1>
+          </div>
+          <div class="tab-content w-full" id="tab-content-v">
+            <h1 class="font-bold text-3xl">Tab 5</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../scripts/dashboard.js"></script>
+  </body>
+</html>
